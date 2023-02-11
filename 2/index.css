@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 body {
     font-family: 'Poppins', sans-serif;
     padding:0px;
@@ -86,6 +86,8 @@ header table {
 }
 #logo {
     font-size:24px;
+    font-family: 'Kalam', cursive;
+
     color:rgb(255, 44, 90);
 }
 #navigation {
@@ -157,10 +159,9 @@ header table {
     border:3px solid rgb(255, 44, 90);
     padding:8px 40px;
     width:35%;
-    border-radius:80px;
     font-weight:bold;
     margin:2vh 0px;
-    transition:0.4s ease-in-out;
+    transition:0.2s ease-in-out;
 }
 .btn_one:hover {
     box-shadow:0px 10px 30px rgba(255, 44, 90, 0.8);
@@ -249,7 +250,7 @@ header table {
     font-family: 'Poppins', sans-serif;
     font-size:18px;
     transition:0.4s ease-in-out;
-    color:#000;
+    color:white;
     font-weight:bold;
 }
 #contact form textarea {
@@ -264,7 +265,7 @@ header table {
     background:transparent;
     resize:none;
     transition:0.4s ease-in-out;
-    color:#000;
+    color:white;
     font-weight:bold;
 }
 #contact form input:focus {
@@ -347,12 +348,12 @@ button:focus {
         text-align:center;
     }
     .btn_one {
-    padding:6px 30px;
-    width:60%;
-    margin: 3vh auto;
-    box-shadow:0px 10px 20px rgba(255, 44, 90, 0.8);
-    background:rgb(255, 44, 90);
-    color:#fff;
+        padding: 6px 30px;
+        width: 94%;
+        margin: 2vh auto;
+        box-shadow: 0px 10px 20px rgb(255 44 90 / 80%);
+        background: rgb(255, 44, 90);
+        color: #FFD;
     }
     .btn_one:hover {
         box-shadow:0px 10px 40px rgba(255, 44, 90, 0.8);
@@ -382,14 +383,14 @@ button:focus {
     }
     header {
         width:96vw;
-        padding:4vh 2vw;
+        padding: 2vh 4vw;
         position:absolute;
     }
     #header table tr td {
         width:100%;
         display:block;
         text-align:center;
-        padding:15px 0px;
+        padding:10px 0px;
     }
     #navigation a {
     color: white;
@@ -416,6 +417,9 @@ margin-bottom: 70px;
     margin:auto;
 }
 
+#projectpara{
+    font-weight:100;
+}
 @media (max-width: 1000px){
 .Projects{
     width: fit-content;
@@ -436,3 +440,16 @@ margin-bottom: 70px;
 }
 
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+  
