@@ -107,9 +107,6 @@ header table {
 #top_part {
     width:100%;
 }
-#top_part tr td{
-    width:50%;
-}
 #about {
     margin-top: 58px;
     animation-delay: 2s;
@@ -120,7 +117,7 @@ header table {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     padding: 0px 12%;
 }
 #about h1 {
@@ -132,8 +129,8 @@ header table {
     margin-top:4vh;
 }
 #about table tr td {
-    width:20% !important;
-    text-align:left;
+    /* width: 20% !important; */
+    text-align: left;
 }
 .social {
     color:rgb(255, 44, 90);
@@ -155,7 +152,7 @@ header table {
     font-size:18px;
     font-family: 'Poppins', sans-serif;
     color:rgb(255, 44, 90);
-    background:#fff;
+    background:transparent;
     border:3px solid rgb(255, 44, 90);
     padding:8px 40px;
     width:35%;
@@ -168,13 +165,6 @@ header table {
     cursor:pointer;
     color:#fff;
     background:rgb(255, 44, 90);
-}
-#rightImage {
-    width:100%;
-    height:95vh;
-    background:linear-gradient(0deg,rgba(255, 44, 90, 0.8),rgba(2255, 44, 90, 0.8)),url("https://images.unsplash.com/photo-1506057527569-6a0285b2fcc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=60") center center;
-    background-size:cover;
-    background-repeat:no-repeat;
 }
 #work {
     width:92vw;
@@ -193,15 +183,9 @@ header table {
     z-index:1;
     transition:0.4s ease-in-out;
 }
-#photos img {
-    width:100%;
-    height:auto;
-    margin:4.5% 0px;
-    transition:0.4s ease-in-out;
-}
-#photos img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+#projectdiv:hover {
+    transform: scale(1.02);
+    transition:0.2s ease-in-out;
 }
 #bio {
     width:92vw;
@@ -209,9 +193,9 @@ header table {
     font-weight:bold;
 }
 #bio h1 {
-    padding:5px 0px;
-    border-bottom:4px solid rgb(255, 44, 90);
-    width:8%;
+    padding: 5px 0px;
+    border-bottom: 4px solid rgb(255, 44, 90);
+    width: fit-content;
 }
 #contact {
     width:92vw;
@@ -224,6 +208,7 @@ header table {
 }
 #contact table {
     width:100%;
+    
 }
 #contact table tr td {
     width:50%;
@@ -300,12 +285,14 @@ button:focus {
 ::-webkit-scrollbar {
     width:5px;
     height:5px;
+    background: black;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: black;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(0, 0, 0); 
+    background: white;
+    border-radius: 25px;
 }
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0,0.8); 
@@ -334,22 +321,22 @@ button:focus {
         text-align:center;
     }
     #about {
-        width:92% !important;
-        height:75vh;
-        padding-top:20vh !important;
-        text-align:center;
-        padding:0px 4%;
-    }
+        width: 100% !important;
+        height: 75vh;
+        padding-top: 20vh !important;
+        text-align: center;
+        }
     #about table {
         width:100%;
         margin-top:6vh;
     }
     #about table tr td {
         text-align:center;
+       width: inherit;
     }
     .btn_one {
         padding: 6px 30px;
-        width: 94%;
+        width: 85%;
         margin: 2vh auto;
         box-shadow: 0px 10px 20px rgb(255 44 90 / 80%);
         background: rgb(255, 44, 90);
@@ -373,13 +360,14 @@ button:focus {
         width:90%;
     }
     #work h1 {
-        width:19%;
+        width: fit-content;
     }
     #bio h1 {
-        width:25%;
+        width: fit-content;
     }
     #contact h1 {
-        width:33%;
+        width: fit-content;
+        margin-bottom:0px;
     }
     header {
         width:96vw;
@@ -438,6 +426,15 @@ margin-bottom: 70px;
     width: 100%;
     height: auto;
 }
+.buttondiv {
+    width: initial;
+    margin: auto;
+}
+#about {
+ 
+     padding: 0px 0px;
+}
+
 
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
